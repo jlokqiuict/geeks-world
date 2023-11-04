@@ -182,7 +182,7 @@ function generateProductReviews() {
     } else if (review.mediaType === "image") {
       const imageReview = document.createElement("img");
       imageReview.classList.add("review-image");
-      videoReview.src = `../reviews/${review.media}`;
+      imageReview.src = `../reviews/${review.media}`;
       imageReview.alt = "Review Image";
       reviewItem.appendChild(imageReview);
     }
