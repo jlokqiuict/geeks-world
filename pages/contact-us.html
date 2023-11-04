@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Geek's World</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.png"
+      type="image/x-icon"
+    />
+    <script defer src="../scripts/submit_contact_form.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="../assets/company.png" alt="Geek's World's logo" />
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Contact Us</h1>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="first-name">First Name:</label>
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            maxlength="25"
+            placeholder="Enter your first name."
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="last-name">Last Name:</label>
+          <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            maxlength="25"
+            placeholder="Enter your last name."
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <div>
+            <input type="radio" id="male" name="gender" value="male" />
+            <span for="male">Male</span><br />
+            <input type="radio" id="female" name="gender" value="female" />
+            <span for="female">Female</span><br />
+            <input type="radio" id="other" name="gender" value="other" />
+            <span for="other">Other</span><br />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Enter your email address."
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]+"
+            required
+            placeholder="Enter your phone no."
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="nationality">Nationality:</label>
+          <select id="nationality" name="nationality">
+            <option value="citizen">Full Citizenship</option>
+            <option value="pr">Permanent Resident (PR)</option>
+            <option value="non">Non-citizen / Non-PR</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="query">Comment / Message / General Inquiry: </label>
+          <textarea
+            id="query"
+            name="query"
+            rows="6"
+            required
+            placeholder="Write your comment / message / general inquiry."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="consent" name="consent" required />
+          <span for="consent">* I agree to the terms and conditions.</span
+          ><br />
+          <input type="checkbox" id="privacy" name="privacy" required />
+          <span for="privacy">* I agree to the privacy policy.</span>
+        </div>
+
+        <div class="form-group">
+          <button id="submit-btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2023 Geek's World. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
