@@ -68,26 +68,6 @@ header nav ul li a:hover {
   background-color: var(--color-tertiary);
 }
 
-/* Responsive navigation bar */
-@media only screen and (max-width: 768px) {
-  header img {
-    max-height: 30px;
-  }
-
-  header nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  header nav ul {
-    flex-direction: column;
-  }
-
-  header nav ul li {
-    margin-bottom: 10px;
-  }
-}
-
 /* Home  */
 
 .showcase {
@@ -414,3 +394,30 @@ footer p {
   padding-top: 10px;
   font-size: 16px;
 }
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+  main {
+    padding-top: 200px;
+  }
+
+  header img {
+    max-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin-bottom: 10px;
+  }
+}
+
